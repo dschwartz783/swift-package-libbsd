@@ -7,5 +7,8 @@ let package = Package(
     name: "BSD",
     providers: [
         .apt(["libbsd-dev"])
+    ],
+    targets: [
+        .target(name: "BSD", dependencies: [])
     ]
 )
